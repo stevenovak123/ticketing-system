@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 
-const initalState = {
+const initialState = {
 	user: null,
 	isError: false,
 	isSuccess: false,
@@ -20,7 +20,7 @@ export const login = createAsyncThunk('auth/login', async (user, thunkAPI) => {
 
 export const authSlice = createSlice({
 	name: 'auth',
-	initalState,
+	initialState,
 	reducers: {},
 	extraReducers: (builder) => {},
 })
